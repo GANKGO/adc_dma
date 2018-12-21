@@ -29,7 +29,8 @@
 //******************************************************************************/。
 #include "oled.h"
 //#include "stdlib.h"
-#include "oledfont.h"  	 
+#include "oledfont.h" 
+
 
 //#include "delay.h"
 //OLED的显存
@@ -42,17 +43,7 @@
 //[5]0 1 2 3 ... 127	
 //[6]0 1 2 3 ... 127	
 //[7]0 1 2 3 ... 127 			   
-void delay_ms(unsigned int ms)
-{                         
-	unsigned int a;
-	while(ms)
-	{
-		a=1800;
-		while(a--);
-		ms--;
-	}
-	return;
-}
+
 #if OLED_MODE==1
 //向SSD1106写入一个字节。
 //dat:要写入的数据/命令
@@ -88,7 +79,7 @@ void OLED_WR_Byte(u8 dat,u8 cmd)
 	HAL_SPI_Transmit(&hspi1, &dat, 1, 10);
 	
 	OLED_CS_Set();
-		  
+	OLED_DC_Set();	  
 } 
 #endif
 	void OLED_Set_Pos(unsigned char x, unsigned char y) 
@@ -120,7 +111,8 @@ void OLED_Clear(void)
 		OLED_WR_Byte (0xb0+i,OLED_CMD);    //设置页地址（0~7）
 		OLED_WR_Byte (0x00,OLED_CMD);      //设置显示位置—列低地址
 		OLED_WR_Byte (0x10,OLED_CMD);      //设置显示位置—列高地址   
-		for(n=0;n<128;n++)OLED_WR_Byte(0,OLED_DATA); 
+		for(n=0;n<128;n++)
+		OLED_WR_Byte(0,OLED_DATA); 
 	} //更新显示
 }
 
@@ -155,7 +147,8 @@ void OLED_ShowChar(u8 x,u8 y,u8 chr)
 uint32_t oled_pow(u8 m,u8 n)
 {
 	uint32_t result=1;	 
-	while(n--)result*=m;    
+	while(n--)
+		result*=m;    
 	return result;
 }				  
 //显示2个数字
@@ -241,9 +234,9 @@ void OLED_Init(void)
    
  
   OLED_RST_Set();
-	delay_ms(100);
+	HAL_Delay(100);
 	OLED_RST_Clr();
-	delay_ms(100);
+	HAL_Delay(100);
 	OLED_RST_Set(); 
 	/*				  
 	OLED_WR_Byte(0xAE,OLED_CMD);//--turn off oled panel

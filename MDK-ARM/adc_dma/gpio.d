@@ -1,8 +1,8 @@
 adc_dma\gpio.o: ../Core/Src/gpio.c
 adc_dma\gpio.o: ../Core/Inc/gpio.h
+adc_dma\gpio.o: ../Core/Inc/main.h
 adc_dma\gpio.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
 adc_dma\gpio.o: ../Core/Inc/stm32f1xx_hal_conf.h
-adc_dma\gpio.o: ../Core/Inc/main.h
 adc_dma\gpio.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h
 adc_dma\gpio.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h
 adc_dma\gpio.o: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h

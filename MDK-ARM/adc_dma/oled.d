@@ -2,7 +2,6 @@ adc_dma\oled.o: ..\Core\Src\oled.c
 adc_dma\oled.o: ../Core/Inc/oled.h
 adc_dma\oled.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
 adc_dma\oled.o: ../Core/Inc/stm32f1xx_hal_conf.h
-adc_dma\oled.o: ../Core/Inc/main.h
 adc_dma\oled.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h
 adc_dma\oled.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h
 adc_dma\oled.o: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h
@@ -28,5 +27,6 @@ adc_dma\oled.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h
 adc_dma\oled.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
 adc_dma\oled.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h
 adc_dma\oled.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
+adc_dma\oled.o: ../Core/Inc/main.h
 adc_dma\oled.o: ../Core/Inc/spi.h
 adc_dma\oled.o: ../Core/Inc/oledfont.h

@@ -1,8 +1,8 @@
 adc_dma\dma.o: ../Core/Src/dma.c
 adc_dma\dma.o: ../Core/Inc/dma.h
+adc_dma\dma.o: ../Core/Inc/main.h
 adc_dma\dma.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
 adc_dma\dma.o: ../Core/Inc/stm32f1xx_hal_conf.h
-adc_dma\dma.o: ../Core/Inc/main.h
 adc_dma\dma.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h
 adc_dma\dma.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h
 adc_dma\dma.o: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h

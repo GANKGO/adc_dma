@@ -42,11 +42,11 @@
 
 
 
-#define OLED_RST_Clr() HAL_GPIO_WritePin(CS_GPIO_Port, RES_Pin, GPIO_PIN_RESET);
-#define OLED_RST_Set() HAL_GPIO_WritePin(CS_GPIO_Port, RES_Pin, GPIO_PIN_SET);
+#define OLED_RST_Clr() HAL_GPIO_WritePin(RES_GPIO_Port, RES_Pin, GPIO_PIN_RESET);
+#define OLED_RST_Set() HAL_GPIO_WritePin(RES_GPIO_Port, RES_Pin, GPIO_PIN_SET);
 
-#define OLED_DC_Clr() HAL_GPIO_WritePin(CS_GPIO_Port, DC_Pin, GPIO_PIN_RESET);
-#define OLED_DC_Set() HAL_GPIO_WritePin(CS_GPIO_Port, DC_Pin, GPIO_PIN_SET);
+#define OLED_DC_Clr() HAL_GPIO_WritePin(DC_GPIO_Port, DC_Pin, GPIO_PIN_RESET);
+#define OLED_DC_Set() HAL_GPIO_WritePin(DC_GPIO_Port, DC_Pin, GPIO_PIN_SET);
 
 #define OLED_CS_Clr()  HAL_GPIO_WritePin(CS_GPIO_Port, CS_Pin, GPIO_PIN_RESET);
 #define OLED_CS_Set()  HAL_GPIO_WritePin(CS_GPIO_Port, CS_Pin, GPIO_PIN_SET);
@@ -65,7 +65,7 @@
 #define Y_WIDTH 	64	    						  
 //-----------------OLED端口定义----------------  					   
 
-void delay_ms(unsigned int ms);
+
 		     
 
 //OLED控制用函数

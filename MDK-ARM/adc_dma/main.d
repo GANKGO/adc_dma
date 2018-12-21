@@ -32,3 +32,4 @@ adc_dma\main.o: ../Core/Inc/dma.h
 adc_dma\main.o: ../Core/Inc/spi.h
 adc_dma\main.o: ../Core/Inc/usart.h
 adc_dma\main.o: ../Core/Inc/gpio.h
+adc_dma\main.o: ../Core/Inc/oled.h
