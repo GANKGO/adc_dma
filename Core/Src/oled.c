@@ -27,6 +27,7 @@
 //Copyright(C) ÖÐ¾°Ô°µç×Ó2014/3/16
 //All rights reserved
 //******************************************************************************/¡£
+#include "stm32f1xx_hal.h"
 #include "oled.h"
 //#include "stdlib.h"
 #include "oledfont.h"  	 

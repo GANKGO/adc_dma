@@ -46,7 +46,7 @@
 #include "gpio.h"
 
 /* USER CODE BEGIN Includes */
-
+#include "oled.h"
 /* USER CODE END Includes */
 
 /* Private variables ---------------------------------------------------------*/
@@ -114,6 +114,9 @@ int main(void)
 
   /* USER CODE BEGIN 3 */
 
+		 OLED_Init();
+		 OLED_ShowChar(0x5,0x2,'h');
+		
   }
   /* USER CODE END 3 */
 
