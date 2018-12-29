@@ -119,19 +119,8 @@ int main(void)
   MX_SPI1_Init();
   /* USER CODE BEGIN 2 */
   OLED_Init();			//???OLED  
-  OLED_Clear(); 
-  /* USER CODE END 2 */
-
-  /* Infinite loop */
-  /* USER CODE BEGIN WHILE */
-  while (1)
-  {
-
-    /* USER CODE END WHILE */
-
-    /* USER CODE BEGIN 3 */
-   
-		OLED_Clear();
+  OLED_Clear();
+  OLED_Clear();
 		OLED_ShowCHinese(0,0,0);//?
 		OLED_ShowCHinese(18,0,1);//?
 		OLED_ShowCHinese(36,0,2);//?
@@ -147,11 +136,18 @@ int main(void)
 		OLED_ShowChar(48,6,t);//??ASCII??	   
 		t++;
 		if(t>'~')t=' ';
-		OLED_ShowNum(103,6,t,3,16);//??ASCII????? 	
-			
-		
-		HAL_Delay(500);
-		OLED_Clear();
+		OLED_ShowNum(103,6,t,3,16);//??ASCII????? 		
+  /* USER CODE END 2 */
+
+  /* Infinite loop */
+  /* USER CODE BEGIN WHILE */
+  while (1)
+  {
+
+    /* USER CODE END WHILE */
+
+    /* USER CODE BEGIN 3 */
+   
 		
 		
   }
